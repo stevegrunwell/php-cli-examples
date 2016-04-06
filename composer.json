@@ -1,0 +1,14 @@
+{
+    "name": "stevegrunwell/php-cli-examples",
+    "description": "Example PHP CLI scripts for various platforms.",
+    "require": {
+        "symfony/console": "^3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Grunwell",
+            "email": "steve@stevegrunwell.com"
+        }
+    ]
+}
