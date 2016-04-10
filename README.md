@@ -13,7 +13,49 @@ $ composer install
 
 ## Examples
 
-### Symfony Console Component
+
+### PHP Functions
+
+*Demonstrations of calling native PHP functions in CLI scripts.*
+
+
+#### [`exec()`](http://us3.php.net/manual/en/function.exec.php)
+
+Call an external program and returns the last line of its output.
+
+```sh
+$ php examples/ExecExample.php
+```
+
+#### [`shell_exec()`](http://us3.php.net/manual/en/function.shell-exec.php)
+
+Call an external program and returns its full output as a string.
+
+```sh
+$ php examples/ShellExecExample.php
+```
+
+#### [`getenv()`](http://us3.php.net/manual/en/function.get.php) and [`putenv()`](http://us3.php.net/manual/en/function.putenv.php)
+
+Retrieve and set system environment variables.
+
+```sh
+# The script will read DEMO_NAME and recognize you.
+$ export DEMO_NAME="Steve"
+$ php examples/EnvExample.php
+
+# Unset DEMO_NAME for a different behavior.
+$ unset DEMO_NAME
+$ php examples/EnvExample.php
+```
+
+
+### Libraries and Frameworks
+
+*Simple programs built using third-party tools.*
+
+
+#### Symfony Console Component
 
 A simple example of a [Symfony Console command](http://symfony.com/doc/current/components/console/) that accepts user output and demonstrates output.
 
