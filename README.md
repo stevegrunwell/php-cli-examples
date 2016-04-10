@@ -13,6 +13,20 @@ $ composer install
 
 ## Examples
 
+### Globals
+
+*Global variables defined within PHP.*
+
+#### [`argc`](http://php.net/manual/en/reserved.variables.argc.php) and [`$argv`](http://php.net/manual/en/reserved.variables.argv.php)
+
+The argument **count** and **values**, respectively, that have been passed to PHP.
+
+The script name is treated as an argument, so `$argc` should never be < 1 nor should `$argv` ever be empty.
+
+```sh
+$ php examples/ArgExample.php abc 123
+```
+
 
 ### PHP Functions
 
