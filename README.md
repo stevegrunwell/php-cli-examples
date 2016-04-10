@@ -49,6 +49,20 @@ $ unset DEMO_NAME
 $ php examples/EnvExample.php
 ```
 
+#### [`exit`](http://us3.php.net/manual/en/function.exit.php)
+
+Demonstrates exit codes within PHP.
+
+> **Note:** Technically, `exit` is a language construct, not a function, though it operates much like one.
+
+```sh
+# Exit with a code of 0 (success) and continue to echo 'Success!';
+$ php examples/ExitCodeExample.php && echo "Success"
+
+# Exit with a non-zero status code to break the chain.
+$ php examples/ExitCodeExample.php 123 && echo "You should never see this"
+```
+
 
 ### Libraries and Frameworks
 
