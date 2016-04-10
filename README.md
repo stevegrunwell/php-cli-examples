@@ -88,7 +88,7 @@ $ php examples/ExitCodeExample.php 123 && echo "You should never see this"
 A simple example of a [Symfony Console command](http://symfony.com/doc/current/components/console/) that accepts user output and demonstrates output.
 
 ```sh
-$ php examples.php symfony-example Steve
+$ php examples/SymfonyExample.php symfony-example Steve
 ```
 
 
