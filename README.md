@@ -49,6 +49,23 @@ Call an external program and returns its full output as a string.
 $ php examples/ShellExecExample.php
 ```
 
+#### [`system()`](http://us3.php.net/manual/en/function.system.php)
+
+Executes a given command and outputs the result, attempting to flush the output buffer with each line.
+
+```sh
+$ php examples/SystemExample.php
+```
+
+#### [`passthru()`](http://us3.php.net/manual/en/function.passthru.php)
+
+Like `exec()` or `system()`, `passthru()` executes a given command and outputs the result, but the output is not altered in any way, which makes it better suited for things like binary file operations.
+
+```sh
+$ php examples/PassthruExample.php
+```
+
+
 #### [`getenv()`](http://us3.php.net/manual/en/function.get.php) and [`putenv()`](http://us3.php.net/manual/en/function.putenv.php)
 
 Retrieve and set system environment variables.
