@@ -108,6 +108,18 @@ A simple example of a [Symfony Console command](http://symfony.com/doc/current/c
 $ php examples/SymfonyExample.php symfony-example Steve
 ```
 
+#### WP-CLI
+
+A trivial [WP-CLI command](http://wp-cli.org/) that accepts a user login and displays the latest posts from that user.
+
+As WP-CLI requires a WordPress environment, you'll need to copy the example file into WordPress:
+
+```sh
+$ cp examples/WPCLIExample.php /path/to/wordpress/wp-content/wp-cli-example.php
+$ cd /path/to/wordpress
+$ wp --require=wp-content/example-command.php example-command latest-posts-by-user admin
+```
+
 
 ## License
 
