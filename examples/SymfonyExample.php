@@ -3,7 +3,7 @@
 
 // Require dependencies.
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/SymfonyExampleClass.php';
+require_once __DIR__ . '/SymfonyExampleCommand.php';
 
 use Symfony\Component\Console\Application;
 
