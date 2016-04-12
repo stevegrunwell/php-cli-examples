@@ -17,7 +17,7 @@ $ composer install
 
 *Global variables defined within PHP.*
 
-#### [`argc`](http://php.net/manual/en/reserved.variables.argc.php) and [`$argv`](http://php.net/manual/en/reserved.variables.argv.php)
+#### [`$argc`](http://php.net/manual/en/reserved.variables.argc.php) and [`$argv`](http://php.net/manual/en/reserved.variables.argv.php)
 
 The argument **count** and **values**, respectively, that have been passed to PHP.
 
