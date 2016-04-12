@@ -108,6 +108,14 @@ A simple example of a [Symfony Console command](http://symfony.com/doc/current/c
 $ php examples/SymfonyExample.php symfony-example Steve
 ```
 
+#### PHP-CLI Tools
+
+Uses [PHP-CLI Tools'](https://github.com/wp-cli/php-cli-tools) `cli\prompt()` and `cli\choose()` helpers to collect user input, then displays output using `cli\line()`.
+
+```sh
+$ php examples/PHPCliToolsExample.php
+```
+
 #### WP-CLI
 
 A trivial [WP-CLI command](http://wp-cli.org/) that accepts a user login and displays the latest posts from that user.

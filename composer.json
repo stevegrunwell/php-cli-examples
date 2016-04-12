@@ -10,5 +10,8 @@
             "name": "Steve Grunwell",
             "email": "steve@stevegrunwell.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "wp-cli/php-cli-tools": "^0.11.1"
+    }
 }

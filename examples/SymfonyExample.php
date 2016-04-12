@@ -1,5 +1,10 @@
 #!/usr/bin/env php
 <?php
+/**
+ * Example command using the Symfony Console component.
+ *
+ * @link http://symfony.com/doc/current/components/console
+ */
 
 // Require dependencies.
 require_once __DIR__ . '/../vendor/autoload.php';
