@@ -1,8 +1,15 @@
 <?php
 /**
- * Example command using the Symfony Console component.
+ * Example command using WP-CLI.
  *
- * @link http://symfony.com/doc/current/components/console
+ * ## Usage
+ *
+ * On a WordPress site, either include this file in a plugin/theme or use the --include option
+ * with WP-CLI:
+ *
+ *   $ wp --include path/to/WPCLIExample.php example-command latest-posts-by-user steve
+ *
+ * @link https://make.wordpress.org/cli/handbook/commands-cookbook/
  */
 
 /**
@@ -34,13 +41,20 @@ class Example_WP_CLI_Command extends WP_CLI_Command {
 	 */
 	public function latest_posts_by_user( $args ) {
 		$user = get_user_by( 'login', $args['0'] );
+
 		if ( ! $user ) {
 			return WP_CLI::error( 'The specified user login does not exist!' );
 		}
 
-		$posts = get_posts( array( 'author' => $user->ID ) );
+		$posts = get_posts( [
+            'author' => $user->ID,
+        ] );
 
-		return WP_CLI\Utils\format_items( 'table', $posts, array( 'ID', 'post_title', 'post_date' ) );
+		return WP_CLI\Utils\format_items(
+            'table',
+            $posts,
+            [ 'ID', 'post_title', 'post_date' ]
+        );
 	}
 }
 
