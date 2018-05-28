@@ -1,17 +1,16 @@
 {
     "name": "stevegrunwell/php-cli-examples",
     "description": "Example PHP CLI scripts for various platforms.",
-    "require": {
-        "symfony/console": "^3.0"
-    },
     "license": "MIT",
     "authors": [
         {
             "name": "Steve Grunwell",
-            "email": "steve@stevegrunwell.com"
+            "email": "steve@stevegrunwell.com",
+            "homepage": "https://stevegrunwell.com"
         }
     ],
-    "require-dev": {
-        "wp-cli/php-cli-tools": "^0.11.1"
+    "require": {
+        "symfony/console": "^4.0",
+        "wp-cli/php-cli-tools": "^0.11"
     }
 }
