@@ -12,7 +12,9 @@ require_once __DIR__ . '/SymfonyExampleCommand.php';
 
 use Symfony\Component\Console\Application;
 
-// Symfony application and command.
+/**
+ * Bootstrap a Symfony Application with our command.
+ */
 $application = new Application();
 $application->add(new SymfonyExample());
 $application->run();

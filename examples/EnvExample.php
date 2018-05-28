@@ -2,6 +2,14 @@
 /**
  * Interacting with system environment variables
  *
+ * ## Usage
+ *
+ * Pass a name using the DEMO_NAME environment variable:
+ *
+ *   DEMO_NAME=Steve php EnvExample.php
+ *
+ * If the DEMO_NAME is empty, the script will think you're Fred.
+ *
  * @link http://us3.php.net/manual/en/function.getenv.php
  */
 
