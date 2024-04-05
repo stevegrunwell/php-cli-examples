@@ -1,5 +1,6 @@
 #!/usr/bin/env php
 <?php
+
 /**
  * Example command using PHP-CLI Tools.
  *
@@ -14,5 +15,5 @@ $loud   = cli\choose('Shall I shout it');
 $suffix = 'y' === $loud ? '!' : '.';
 
 for ($i = 1; $i <= $limit; $i++) {
-	cli\line($i . $suffix);
+    cli\line($i . $suffix);
 }

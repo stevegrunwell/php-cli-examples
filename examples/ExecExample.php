@@ -1,4 +1,5 @@
 <?php
+
 /**
  * An example of PHP's exec() function.
  *
@@ -10,9 +11,9 @@ echo 'Running `exec(\'which phpcs\')`...' . PHP_EOL;
 $phpcsPath = exec('which phpcs');
 
 if ($phpcsPath) {
-	printf('PHP_CodeSniffer was found at %s', $phpcsPath);
+    printf('PHP_CodeSniffer was found at %s', $phpcsPath);
 } else {
-	echo 'PHP_CodeSniffer was not found in your path.';
+    echo 'PHP_CodeSniffer was not found in your path.';
 }
 
 echo PHP_EOL;

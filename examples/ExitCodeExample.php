@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Demonstrate common exit codes.
  *
@@ -13,11 +14,16 @@
  *   # Will exit with "1".
  *   php ExitCodeExample.php foo bar
  *
+ * You may also verify the exit codes by echoing "$?" after the command.
+ *
+ *   # Will exit with "1"
+ *   php ExitCodeExample.php hello; echo $?
+ *
  * @link http://us3.php.net/manual/en/function.getenv.php
  */
 
 // If we receive any arguments, exit with a status of 1.
-$code = 1 < $argc ? 1 : 0;
+$code = $argc > 1 ? 1 : 0;
 
 printf('Exiting with a code of %d' . PHP_EOL, $code);
 

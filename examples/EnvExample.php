@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Interacting with system environment variables
  *
@@ -16,14 +17,15 @@
 $name = getenv('DEMO_NAME');
 
 if ($name) {
-	printf('Hey, I recognize you, %s!' . PHP_EOL, $name);
-	$name = sprintf('My old friend, %s!', $name);
+    printf('Hey, I recognize you, %s!' . PHP_EOL, $name);
+    $name = sprintf('My old friend, %s!', $name);
 
 } else {
-	echo "I don't know you, so I'll just call you Fred." . PHP_EOL;
-	$name = 'Fred';
+    echo "I don't know you, so I'll just call you Fred." . PHP_EOL;
+    $name = 'Fred';
 }
 
 // Update DEMO_NAME and call the system's echo program.
 putenv('DEMO_NAME=' . $name);
+print  PHP_EOL . 'According to the environment, your name is: ';
 passthru('echo $DEMO_NAME');

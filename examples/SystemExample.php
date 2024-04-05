@@ -1,4 +1,5 @@
 <?php
+
 /**
  * An example of PHP's system() function.
  *

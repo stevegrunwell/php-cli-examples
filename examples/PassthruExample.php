@@ -1,4 +1,5 @@
 <?php
+
 /**
  * An example of PHP's passthru() function.
  *
@@ -7,6 +8,7 @@
  * @link http://us3.php.net/manual/en/function.passthru.php
  */
 
-echo "Let's edit passthru.tmp!" . PHP_EOL;
+echo "Let's edit this file in Vim!" . PHP_EOL;
+echo 'Remember: ESC followed by ":q!" and ENTER to quit ;)' . PHP_EOL;
 
-passthru('vim passthru.tmp');
+passthru('vim ' . escapeshellarg(__FILE__));

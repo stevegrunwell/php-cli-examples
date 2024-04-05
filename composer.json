@@ -2,6 +2,7 @@
     "name": "stevegrunwell/php-cli-examples",
     "description": "Example PHP CLI scripts for various platforms.",
     "license": "MIT",
+    "homepage": "https://github.com/stevegrunwell/php-cli-examples",
     "authors": [
         {
             "name": "Steve Grunwell",
@@ -9,8 +10,13 @@
         }
     ],
     "require": {
-        "symfony/console": "^4.0",
+        "symfony/console": "^7.0",
         "wp-cli/php-cli-tools": "^0.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "SteveGrunwell\\PhpCliExamples\\": "examples/"
+        }
     },
     "config": {
         "sort-packages": true
