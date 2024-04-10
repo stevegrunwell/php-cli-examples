@@ -10,12 +10,14 @@
         }
     ],
     "require": {
+        "php": "^8.0",
+        "league/climate": "^3.8",
         "symfony/console": "^7.0",
         "wp-cli/php-cli-tools": "^0.11"
     },
     "autoload": {
         "psr-4": {
-            "SteveGrunwell\\PhpCliExamples\\": "examples/"
+            "SteveGrunwell\\PhpCliExamples\\": "src/"
         }
     },
     "config": {

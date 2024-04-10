@@ -19,7 +19,7 @@
  *   # Will exit with "1"
  *   php ExitCodeExample.php hello; echo $?
  *
- * @link http://us3.php.net/manual/en/function.getenv.php
+ * @link https://www.php.net/manual/en/function.exit.php
  */
 
 // If we receive any arguments, exit with a status of 1.

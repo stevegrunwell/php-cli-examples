@@ -8,7 +8,7 @@
  */
 
 // Require dependencies.
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 $limit  = cli\prompt('How high should I count?', 10);
 $loud   = cli\choose('Shall I shout it');

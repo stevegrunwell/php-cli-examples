@@ -9,7 +9,8 @@
  *
  *   php ArgExample.php foo bar baz ...
  *
- * @link http://us3.php.net/manual/en/function.getenv.php
+ * @link https://www.php.net/manual/en/reserved.variables.argc.php
+ * @link https://www.php.net/manual/en/reserved.variables.argv.php
  */
 
 printf('There were %d argument(s) passed to PHP:' . PHP_EOL, $argc);

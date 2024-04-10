@@ -6,7 +6,7 @@
  * @link http://symfony.com/doc/current/components/console
  */
 
-namespace SteveGrunwell\PhpCliExamples;
+namespace SteveGrunwell\PhpCliExamples\SymfonyConsole;
 
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -15,7 +15,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(name: 'hello-there')]
-class SymfonyExampleCommand extends Command
+class HelloCommand extends Command
 {
     /**
      * Define what the command should be called and what arguments it should accept.
