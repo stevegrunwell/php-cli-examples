@@ -6,14 +6,11 @@
  * @link https://www.php.net/manual/en/function.exec.php
  */
 
-echo 'Running `exec(\'which phpcs\')`...' . PHP_EOL;
+$return = exec('php ' . escapeshellarg(__DIR__ . '/Counter.php'), $output, $exit_code);
 
-$phpcsPath = exec('which phpcs');
-
-if ($phpcsPath) {
-    printf('PHP_CodeSniffer was found at %s', $phpcsPath);
-} else {
-    echo 'PHP_CodeSniffer was not found in your path.';
-}
-
-echo PHP_EOL;
+printf(
+    "\nRESULTS:\n\$return => %s\n\$output => %s\n\$exit_code => %d\n",
+    var_export($return, true),
+    var_export($output, true),
+    $exit_code
+);

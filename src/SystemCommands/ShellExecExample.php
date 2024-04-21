@@ -3,10 +3,9 @@
 /**
  * An example of PHP's shell_exec() function.
  *
- * @link http://us3.php.net/manual/en/function.shell-exec.php
+ * @link https://www.php.net/manual/en/function.shell-exec.php
  */
 
-echo 'Running `shell_exec(\'ls -a\')`...' . PHP_EOL;
+$return = shell_exec('php ' . escapeshellarg(__DIR__ . '/Counter.php'));
 
-$ls = shell_exec('ls -a');
-echo $ls . PHP_EOL;
+printf("\nRESULTS:\n\$return => %s\n", var_export($return, true));

@@ -2,7 +2,7 @@
 
 This directory contains an example [Symfony Console](https://symfony.com/doc/current/components/console.html) application with two commands, which you may interact with it by running the `App.php` file.
 
-## [HelloThereCommand.php](HelloThereCommand.php)
+## [HelloCommand.php](HelloCommand.php)
 
 A simple greeter script.
 
@@ -43,7 +43,9 @@ Available commands:
   hello-there  Greet a user by name.
   help         Display help for a command
   list         List commands
+```
 
+```
 $ php App.php hello-there --help
 Description:
   Greet a user by name.

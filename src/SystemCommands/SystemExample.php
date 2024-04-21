@@ -3,11 +3,13 @@
 /**
  * An example of PHP's system() function.
  *
- * @link http://us3.php.net/manual/en/function.system.php
+ * @link https://www.php.net/manual/en/function.system.php
  */
 
-echo 'Current directory contents:' . PHP_EOL;
+$return = system('php ' . escapeshellarg(__DIR__ . '/Counter.php'), $exit_code);
 
-system('ls -a', $status);
-
-printf( '`ls` command exited with status "%d"' . PHP_EOL, $status );
+printf(
+    "\nRESULTS:\n\$return => %s\n\$exit_code => %d\n",
+    var_export($return, true),
+    $exit_code
+);

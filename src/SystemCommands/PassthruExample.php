@@ -6,15 +6,6 @@
  * @link https://www.php.net/manual/en/function.passthru.php
  */
 
-$fh = tmpfile();
-$filepath = stream_get_meta_data($fh)['uri'];
-$counter = 0;
+$return = passthru('php ' . escapeshellarg(__DIR__ . '/Counter.php'));
 
-passthru('tail ' . escapeshellarg($filepath));
-
-while (true) {
-    fputs($fh, "\$counter = {$counter}");
-    $counter++;
-    sleep(1);
-}
-
+printf("\nRESULTS:\n\$return => %s\n", var_export($return, true));
